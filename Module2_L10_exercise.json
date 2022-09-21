@@ -1,0 +1,80 @@
+{
+	"id": "51e9405b-884d-41b3-8c0f-5a42d1164b3e",
+	"name": "jsonplaceholder",
+	"timestamp": "2022-09-21T12:04:43.032Z",
+	"collection_id": "14390426-64553e6f-46e4-4dfb-ba83-5493a15fe35d",
+	"folder_id": "14390426-ad1a64f8-9315-4d97-b07b-931938280e74",
+	"environment_id": "0",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "806ffeb2-deb8-4daf-a55b-c23e06ff6548",
+			"name": "Read user with giver email",
+			"url": "https://jsonplaceholder.typicode.com/users?email=Sherwood@rosamond.me",
+			"time": 572,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				572
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e588d10b-2874-4dcb-99ff-4f7939839bbe",
+			"name": "Create album as a chosen user",
+			"url": "https://jsonplaceholder.typicode.com/albums",
+			"time": 310,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				310
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 882,
+	"collection": {
+		"requests": [
+			{
+				"id": "806ffeb2-deb8-4daf-a55b-c23e06ff6548",
+				"method": "GET"
+			},
+			{
+				"id": "e588d10b-2874-4dcb-99ff-4f7939839bbe",
+				"method": "POST"
+			}
+		]
+	}
+}
