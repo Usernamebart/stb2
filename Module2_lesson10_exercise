@@ -1,0 +1,5 @@
+Search user based on an email address
+Dynamically create that user ID
+Pass that ID to the next request
+Create a new album as a user with above ID
+
