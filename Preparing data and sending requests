@@ -1,0 +1,51 @@
+1. Read user with a given email.
+
+
+1.1 Preparation before sending the request:
+
+    'Params' tab
+
+        KEY:     email
+        VALUE:  Sherwood@rosamond.me
+   
+  
+    'Tests' tab
+
+        pm.test("Status code is 200", function () {
+            pm.response.to.have.status(200);
+        });
+
+        const responseData = pm.response.json();
+        pm.globals.set("userId", responseData[0].id);
+  
+  
+1.2 Sending the request:
+  
+    GET https://jsonplaceholder.typicode.com/users?email=Sherwood@rosamond.me
+    
+    
+=====================
+
+
+2. Create album as a chosen user
+
+
+2.1 'Body' tab
+
+    {
+    "userId": {{userId}},
+    "title": "Album creation with the use of query paramsa and userId as a variable"
+    }
+    
+2.2 'Tests' tab
+
+  pm.test("Status code is 201", function () {
+    pm.response.to.have.status(201);
+  });
+  
+  
+2.3 Sending the request:
+
+    POST https://jsonplaceholder.typicode.com/albums
+    
+    
