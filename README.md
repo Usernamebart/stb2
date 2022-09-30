@@ -4,4 +4,4 @@ STB II notes
 
 Notes for exercises
 Run collection results
-Data preperation before senfing requests
+Data preperation before sending requests
