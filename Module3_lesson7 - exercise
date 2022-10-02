@@ -1,0 +1,3 @@
+Send a few GETs fo google.com and check if you will get a cookie, if yes - delete this cookie and send another GET
+Create a public RequestBin
+Send a FEW POSTs with different body types and check the results in RequestBin
