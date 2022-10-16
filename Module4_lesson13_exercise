@@ -3,7 +3,7 @@ Go thru the whole CRUD on /employees resource
   GET all employees
   GET employee with given ID
   Use query params to search employees
-  Make 'full search'
+  Make 'full search' ( https://github.com/typicode/json-server#full-text-search ) - details 08:15 https://akademiaqa.pl/szkola-testowania-backendu-ii/modul-4-crud/lekcja-8-get/
   
   POST a new employee
   
