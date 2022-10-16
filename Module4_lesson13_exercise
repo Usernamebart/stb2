@@ -1,0 +1,24 @@
+Go thru the whole CRUD on /employees resource
+
+  GET all employees
+  GET employee with given ID
+  Use query params to search employees
+  Make 'full search'
+  
+  POST a new employee
+  
+  PUT and PATCH on an employee
+  
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!                  IMPORTANT NOTE                            !!
+    !!                                                            !!
+    !! DO NOT USE PATCH ON A NESTED OBJECTS - address and company !!
+    !! THERE IS A KNOWN ISSUE IN JSON-SERVER                      !!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
+  DEL to cleanup after!
+  
+  Write tests to every request you make!
+  Remember to wrote tests for cleanup!
+  
+  
