@@ -1,0 +1,123 @@
+{
+	"id": "1a9325a1-1994-4f96-b063-18c6f47fb664",
+	"name": "M6_L5_exercise",
+	"timestamp": "2023-01-02T21:15:52.824Z",
+	"collection_id": "14390426-b08aec86-bb98-40e4-beb2-2fc54f860965",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0de81006-116b-41d2-950c-a80e02db79c8",
+			"name": "Read all bugs and check if all statuses are not empty",
+			"url": "http://localhost:3000/bugs",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code is 200": true,
+				"Should return statuses with non empty values (Chai library)": true,
+				"Should return statuses with non empty values (Lodash library)": true
+			},
+			"testPassFailCounts": {
+				"Should return status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return statuses with non empty values (Chai library)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return statuses with non empty values (Lodash library)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Should return status code is 200": true,
+					"Should return statuses with non empty values (Chai library)": true,
+					"Should return statuses with non empty values (Lodash library)": true
+				}
+			]
+		},
+		{
+			"id": "c257eb50-5fb5-461b-b2b5-da0e8dcd0339",
+			"name": "Create a new bug",
+			"url": "http://localhost:3000/bugs",
+			"time": 33,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Should return status code 201": true
+			},
+			"testPassFailCounts": {
+				"Should return status code 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Should return status code 201": true
+				}
+			]
+		},
+		{
+			"id": "a7452e00-9f99-4ec2-8363-25cb761cf783",
+			"name": "Read all bugs and check if number of bugs is +1",
+			"url": "http://localhost:3000/bugs",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return list of bugs greater by 1": true
+			},
+			"testPassFailCounts": {
+				"Should return list of bugs greater by 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Should return list of bugs greater by 1": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 91,
+	"collection": {
+		"requests": [
+			{
+				"id": "0de81006-116b-41d2-950c-a80e02db79c8",
+				"method": "GET"
+			},
+			{
+				"id": "c257eb50-5fb5-461b-b2b5-da0e8dcd0339",
+				"method": "POST"
+			},
+			{
+				"id": "a7452e00-9f99-4ec2-8363-25cb761cf783",
+				"method": "GET"
+			}
+		]
+	}
+}
