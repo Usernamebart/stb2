@@ -1,0 +1,4 @@
+Run json server
+Read all bugs from /bugs - go thru every element and check if status in every one of them isn't empty - use Chai and Lodash libraries
+
+Check if bugs are added properly - read all bugs, save number of bugs, create new bug, check if number of bugs is grater by one
