@@ -1,0 +1,141 @@
+{
+	"id": "dfadab89-93c6-4f74-af2c-284df5a2be3c",
+	"name": "Some more practice with Chai",
+	"timestamp": "2023-01-04T20:06:55.671Z",
+	"collection_id": "14390426-a764580e-cdfc-4ce3-833c-e316f5e59d27",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d883ff12-f82e-4a5a-91a3-62de2ec0dcd4",
+			"name": "Get all bugs with Chail",
+			"url": "http://localhost:3000/bugs",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code is 200": true,
+				"Should return array in a response": true,
+				"Should return bugs with non empty value for employeeId key": true
+			},
+			"testPassFailCounts": {
+				"Should return status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return array in a response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return bugs with non empty value for employeeId key": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Should return status code is 200": true,
+					"Should return array in a response": true,
+					"Should return bugs with non empty value for employeeId key": true
+				}
+			]
+		},
+		{
+			"id": "0d428049-fdce-4670-8184-7ce9096ac12d",
+			"name": "Add one more bug",
+			"url": "http://localhost:3000/bugs",
+			"time": 16,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Should return status code 201": true,
+				"Should return response within less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Should return status code 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return response within less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Should return status code 201": true,
+					"Should return response within less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "d1b131de-f564-4db9-8878-7dd5b01fd1c0",
+			"name": "Get all bugs and check if its number increased",
+			"url": "http://localhost:3000/bugs",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code is 200": true,
+				"Should return array in a response": true,
+				"Should return array with number of bugs greater than before new bug was added": true
+			},
+			"testPassFailCounts": {
+				"Should return status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return array in a response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return array with number of bugs greater than before new bug was added": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Should return status code is 200": true,
+					"Should return array in a response": true,
+					"Should return array with number of bugs greater than before new bug was added": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 73,
+	"collection": {
+		"requests": [
+			{
+				"id": "d883ff12-f82e-4a5a-91a3-62de2ec0dcd4",
+				"method": "GET"
+			},
+			{
+				"id": "0d428049-fdce-4670-8184-7ce9096ac12d",
+				"method": "POST"
+			},
+			{
+				"id": "d1b131de-f564-4db9-8878-7dd5b01fd1c0",
+				"method": "GET"
+			}
+		]
+	}
+}
