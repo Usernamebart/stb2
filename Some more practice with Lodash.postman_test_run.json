@@ -1,0 +1,135 @@
+{
+	"id": "4a235e7c-cd99-4dac-b93f-b5d065f048b8",
+	"name": "Some more practice with Lodash",
+	"timestamp": "2023-01-04T20:04:41.078Z",
+	"collection_id": "14390426-ef9bf2f2-dd91-418c-8996-77c0b559c7f9",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "96b6a1aa-d114-4ccf-b6a1-dead9a173c01",
+			"name": "Get all bugs with Lodash",
+			"url": "http://localhost:3000/bugs",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code is 200": true,
+				"Should return bugs with non epmty value for title key": true
+			},
+			"testPassFailCounts": {
+				"Should return status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return bugs with non epmty value for title key": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Should return status code is 200": true,
+					"Should return bugs with non epmty value for title key": true
+				}
+			]
+		},
+		{
+			"id": "ad51bb5e-a7aa-45eb-a992-abfa86890dcc",
+			"name": "Add new bug",
+			"url": "http://localhost:3000/bugs",
+			"time": 34,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Should return status code is 201": true,
+				"Should return response within less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Should return status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return response within less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Should return status code is 201": true,
+					"Should return response within less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "2f469d70-f255-403b-aa6f-ed8b52f60a65",
+			"name": "Get all bugs and check if its number increased",
+			"url": "http://localhost:3000/bugs",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code is 200": true,
+				"Should return array in a response": true,
+				"Should return array with number of bugs greater than before new bug was added": true
+			},
+			"testPassFailCounts": {
+				"Should return status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return array in a response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return array with number of bugs greater than before new bug was added": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Should return status code is 200": true,
+					"Should return array in a response": true,
+					"Should return array with number of bugs greater than before new bug was added": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 93,
+	"collection": {
+		"requests": [
+			{
+				"id": "96b6a1aa-d114-4ccf-b6a1-dead9a173c01",
+				"method": "GET"
+			},
+			{
+				"id": "ad51bb5e-a7aa-45eb-a992-abfa86890dcc",
+				"method": "POST"
+			},
+			{
+				"id": "2f469d70-f255-403b-aa6f-ed8b52f60a65",
+				"method": "GET"
+			}
+		]
+	}
+}
