@@ -1,0 +1,10 @@
+Add one more request to existing 'Trello fun with boards' collection.
+
+New reqest should be after first POST with board creation.
+
+New request should edit board's description.
+
+Use Trello API documentation to check URL and what value needs to be chenged.
+
+Tests to write:
+- check if description has been added properly
