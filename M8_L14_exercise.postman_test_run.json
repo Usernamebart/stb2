@@ -1,0 +1,166 @@
+{
+	"id": "257f5ae6-a170-4c0c-af18-7738bd29377c",
+	"name": "M8_L14_exercise",
+	"timestamp": "2023-01-16T19:12:39.104Z",
+	"collection_id": "14390426-2fd8507c-28d9-411b-b523-56b3a3d7971e",
+	"folder_id": 0,
+	"environment_id": "14390426-6b7441d6-a423-4402-b735-e0e670f91df3",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f4944fcf-91df-4839-ab7f-850e962beba1",
+			"name": "Add a new board",
+			"url": "https://api.trello.com/1/boards/?name=Exercise board&key=83fd3abaf000915cc5e86f5de43a1307&token=ATTA11ecd1b13b61c6ad361349f7d771786433cb481b8433a997fdf145ffab2b0d4e3A1B5E24",
+			"time": 403,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code 200": true,
+				"Should return correct board name: Exercise board": true
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct board name: Exercise board": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				403
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true,
+					"Should return correct board name: Exercise board": true
+				}
+			]
+		},
+		{
+			"id": "4e8e10c1-a70d-48e2-a08a-59ea9447d7d1",
+			"name": "Update newly created board's description",
+			"url": "https://api.trello.com/1/boards/63c5a1a4f172060027994e91?key=83fd3abaf000915cc5e86f5de43a1307&token=ATTA11ecd1b13b61c6ad361349f7d771786433cb481b8433a997fdf145ffab2b0d4e3A1B5E24&desc=New board description",
+			"time": 272,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code 200": true,
+				"Should return correct board name: Exercise board": true
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct board name: Exercise board": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				272
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true,
+					"Should return correct board name: Exercise board": true
+				}
+			]
+		},
+		{
+			"id": "76bf4162-04e5-412b-823f-26d4fc8310cd",
+			"name": "Get newly created board",
+			"url": "https://api.trello.com/1/boards/63c5a1a4f172060027994e91?key=83fd3abaf000915cc5e86f5de43a1307&token=ATTA11ecd1b13b61c6ad361349f7d771786433cb481b8433a997fdf145ffab2b0d4e3A1B5E24",
+			"time": 210,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code 200": true,
+				"Should return correct board name: Exercise board": true,
+				"Should return correct board description: New board description": true
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct board name: Exercise board": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct board description: New board description": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				210
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true,
+					"Should return correct board name: Exercise board": true,
+					"Should return correct board description: New board description": true
+				}
+			]
+		},
+		{
+			"id": "9605ffdd-5fcd-4f45-bf90-c0817b15b736",
+			"name": "Remove newly created board",
+			"url": "https://api.trello.com/1/boards/63c5a1a4f172060027994e91?key=83fd3abaf000915cc5e86f5de43a1307&token=ATTA11ecd1b13b61c6ad361349f7d771786433cb481b8433a997fdf145ffab2b0d4e3A1B5E24",
+			"time": 1389,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Should return status code 200": true
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1389
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2274,
+	"collection": {
+		"requests": [
+			{
+				"id": "f4944fcf-91df-4839-ab7f-850e962beba1",
+				"method": "POST"
+			},
+			{
+				"id": "4e8e10c1-a70d-48e2-a08a-59ea9447d7d1",
+				"method": "PUT"
+			},
+			{
+				"id": "76bf4162-04e5-412b-823f-26d4fc8310cd",
+				"method": "GET"
+			},
+			{
+				"id": "9605ffdd-5fcd-4f45-bf90-c0817b15b736",
+				"method": "DELETE"
+			}
+		]
+	}
+}
