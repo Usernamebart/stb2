@@ -1,0 +1,15 @@
+Pierwsza część:
+
+- utworzyć nowy space
+- utworzyć nową listę pod tym spacem - może byc zwykłą lista a moze byc tez lista w folderze
+- TO TEST: co można podać jako 'nazwa' listy. Poszukać ciekwaych przypadków
+
+Druga część:
+
+- powtórzyć scenariusz e2e:
+    - tworzenie space
+    - towrzenie listy
+    - edycja listy
+    - tworzenie taska
+    - edycja taska
+    - usuniecie space
