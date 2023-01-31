@@ -1,0 +1,892 @@
+{
+	"id": "d077ea61-3704-4a74-81a8-708c6e350802",
+	"name": "M9_L14_exercise",
+	"timestamp": "2023-01-31T06:39:50.611Z",
+	"collection_id": "14390426-2ff94f6a-2e89-49d4-a63b-54a9b25855ba",
+	"folder_id": 0,
+	"environment_id": "14390426-c898b7e1-8cec-43bd-9f05-ca8d2760850e",
+	"totalPass": 140,
+	"totalFail": 91,
+	"results": [
+		{
+			"id": "51e4f849-fee0-4436-9813-10b4f6806eaa",
+			"name": "[Explo] Create new space",
+			"time": 88,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Should return status code 200": false
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 20,
+					"fail": 13
+				}
+			},
+			"times": [
+				1997,
+				242,
+				155,
+				247,
+				252,
+				235,
+				202,
+				211,
+				192,
+				290,
+				181,
+				227,
+				278,
+				210,
+				239,
+				218,
+				192,
+				203,
+				184,
+				189,
+				144,
+				107,
+				118,
+				101,
+				126,
+				93,
+				97,
+				95,
+				85,
+				88,
+				88,
+				159,
+				88
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": true
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				},
+				{
+					"Should return status code 200": false
+				}
+			]
+		},
+		{
+			"id": "4de03411-35f2-4993-8a01-ca2e87c08ff8",
+			"name": "[Explo] Create new folderless list",
+			"time": 113,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Should return status code 200": false,
+				"Should return correct list name": false
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 20,
+					"fail": 13
+				},
+				"Should return correct list name": {
+					"pass": 20,
+					"fail": 13
+				}
+			},
+			"times": [
+				229,
+				255,
+				275,
+				303,
+				202,
+				368,
+				239,
+				245,
+				272,
+				257,
+				244,
+				261,
+				238,
+				250,
+				241,
+				230,
+				197,
+				238,
+				269,
+				253,
+				106,
+				127,
+				105,
+				101,
+				114,
+				86,
+				89,
+				94,
+				86,
+				89,
+				95,
+				91,
+				113
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct list name": true
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct list name": false
+				}
+			]
+		},
+		{
+			"id": "728417f4-3287-4d44-972a-70b78771cf46",
+			"name": "[Explo] Create new task(1)",
+			"time": 89,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Should return status code 200": false,
+				"Should return correct task name: jakaś długa nazwa taska która ma pięćdziesiąt osiem znaków": false
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 20,
+					"fail": 13
+				},
+				"Should return correct task name: nazwaTaska": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: NAZWATASKA": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: NAZWA_TASKA": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: NAZWA TASKA": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: !": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: @": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: #": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: $": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: %": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: ^": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: &": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: *": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: (": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: )": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: _": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: +": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: =": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: -": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: {": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct task name: }": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: '": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: |": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: ?": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: <b>TASK</b>": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: >": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: <": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: ZAŻÓŁĆ GĘŚLĄ JAŹŃ": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name:  ": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: nazwa-taska": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: nazwa.taska": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name:  nazwa/taska ": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Should return correct task name: jakaś długa nazwa taska która ma pięćdziesiąt osiem znaków": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				466,
+				435,
+				477,
+				576,
+				513,
+				504,
+				528,
+				433,
+				386,
+				520,
+				2260,
+				472,
+				501,
+				529,
+				511,
+				465,
+				532,
+				460,
+				516,
+				524,
+				106,
+				103,
+				123,
+				103,
+				92,
+				91,
+				192,
+				87,
+				92,
+				88,
+				89,
+				99,
+				89
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: nazwaTaska": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: NAZWATASKA": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: NAZWA_TASKA": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: NAZWA TASKA": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: 1": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: !": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: @": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: #": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: $": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: %": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: ^": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: &": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: *": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: (": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: )": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: _": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: +": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: =": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: -": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return correct task name: {": true
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: }": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: '": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: |": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: ?": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: <b>TASK</b>": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: >": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: <": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: ZAŻÓŁĆ GĘŚLĄ JAŹŃ": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name:  ": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: nazwa-taska": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: nazwa.taska": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name:  nazwa/taska ": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return correct task name: jakaś długa nazwa taska która ma pięćdziesiąt osiem znaków": false
+				}
+			]
+		},
+		{
+			"id": "98caf896-c7df-4976-88ae-e7f0212b5261",
+			"name": "[Explo] Delete space",
+			"time": 91,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Should return status code 200": false,
+				"Should return empty object": false
+			},
+			"testPassFailCounts": {
+				"Should return status code 200": {
+					"pass": 20,
+					"fail": 13
+				},
+				"Should return empty object": {
+					"pass": 20,
+					"fail": 13
+				}
+			},
+			"times": [
+				201,
+				193,
+				210,
+				188,
+				184,
+				236,
+				223,
+				212,
+				253,
+				218,
+				222,
+				218,
+				192,
+				250,
+				231,
+				250,
+				231,
+				237,
+				240,
+				235,
+				112,
+				114,
+				92,
+				109,
+				110,
+				86,
+				91,
+				88,
+				94,
+				90,
+				88,
+				93,
+				91
+			],
+			"allTests": [
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": true,
+					"Should return empty object": true
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				},
+				{
+					"Should return status code 200": false,
+					"Should return empty object": false
+				}
+			]
+		}
+	],
+	"count": 33,
+	"totalTime": 32539,
+	"collection": {
+		"requests": [
+			{
+				"id": "51e4f849-fee0-4436-9813-10b4f6806eaa",
+				"method": "POST"
+			},
+			{
+				"id": "4de03411-35f2-4993-8a01-ca2e87c08ff8",
+				"method": "POST"
+			},
+			{
+				"id": "728417f4-3287-4d44-972a-70b78771cf46",
+				"method": "POST"
+			},
+			{
+				"id": "98caf896-c7df-4976-88ae-e7f0212b5261",
+				"method": "DELETE"
+			}
+		]
+	}
+}
