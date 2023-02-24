@@ -1,1 +1,15 @@
+Create CRUD for /bugs endpoint
 
+- read all bugs
+- create a new bug
+- read bug with url
+- read bug with path params
+- read bug with query params
+- edit bug
+- delete bug
+
+Remember to:
+- use JSONObject
+- use BeforeAll
+- use BEforeEach
+- use faker
