@@ -3,7 +3,7 @@ Create CRUD for /bugs endpoint
 - read all bugs
 - create a new bug
 - read bug with url
-- read bug with path params
+- read bug with path variable
 - read bug with query params
 - edit bug
 - delete bug
