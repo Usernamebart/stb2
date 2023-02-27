@@ -1,0 +1,93 @@
+package pl.akademiaqa.bugs;
+
+import com.github.javafaker.Faker;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import org.json.JSONObject;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+import static pl.akademiaqa.bugs.ReadBugsTest.BASE_URL;
+
+class UpdateBugTest {
+
+    private static Faker faker;
+    private String randomDescription;
+    private String randomTitle;
+    private String randomStatus;
+    private int randomId;
+
+    @BeforeAll
+    static void beforeAll() {
+        faker = new Faker();
+    }
+
+    @BeforeEach
+    void beforeEach() {
+        randomDescription = faker.twinPeaks().quote();
+        randomTitle = faker.howIMetYourMother().catchPhrase();
+        randomStatus = faker.color().name();
+        randomId = faker.number().numberBetween(1, 50);
+
+        System.out.println(randomId);
+    }
+
+    @Test
+    void updateBugTest() {
+
+        JSONObject bug = new JSONObject();
+        bug.put("title", randomTitle);
+        bug.put("description", randomDescription);
+        bug.put("employeeId", "1");
+        bug.put("status", randomStatus);
+
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .body(bug.toString())
+                .when()
+                .put(BASE_URL + "/" + randomId)
+                .then()
+                .extract()
+                .response();
+
+        response.prettyPeek();
+
+        //Assertions.assertEquals(200, response.statusCode());
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertEquals(randomDescription, json.getString("description"));
+        Assertions.assertEquals(randomTitle, json.getString("title"));
+        Assertions.assertEquals(randomStatus, json.getString("status"));
+
+    }
+
+    @Test
+    void PartialUpdateBugTest() {
+
+        JSONObject bug = new JSONObject();
+        bug.put("title", randomTitle);
+        bug.put("status", randomStatus);
+
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .body(bug.toString())
+                .when()
+                .patch(BASE_URL + "/" + randomId)
+                .then()
+                .extract()
+                .response();
+
+        response.prettyPeek();
+
+        //Assertions.assertEquals(200, response.statusCode());
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertEquals(randomTitle, json.getString("title"));
+        Assertions.assertEquals(randomStatus, json.getString("status"));
+
+    }
+}
