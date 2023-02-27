@@ -1,0 +1,45 @@
+package pl.akademiaqa.bugs;
+
+import com.github.javafaker.Faker;
+import io.restassured.response.Response;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+import static pl.akademiaqa.bugs.ReadBugsTest.BASE_URL;
+
+class DeleteBugTest {
+
+    private static Faker faker;
+    private int randomId;
+
+    @BeforeAll
+    static void beforeAll() {
+        faker = new Faker();
+    }
+
+    @BeforeEach
+    void beforeEach() {
+        randomId = faker.number().numberBetween(1, 50);
+
+    System.out.println(randomId);
+
+    }
+
+    @Test
+    void deleteBug() {
+
+        Response response = given()
+                .when()
+                .delete(BASE_URL + "/" + randomId)
+                .then()
+                .extract()
+                .response();
+
+        Assertions.assertEquals(200, response.statusCode());
+
+    }
+
+}
