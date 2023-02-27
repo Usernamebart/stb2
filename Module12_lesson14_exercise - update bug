@@ -56,7 +56,7 @@ class UpdateBugTest {
 
         response.prettyPeek();
 
-        //Assertions.assertEquals(200, response.statusCode());
+        Assertions.assertEquals(200, response.statusCode());
 
         JsonPath json = response.jsonPath();
         Assertions.assertEquals(randomDescription, json.getString("description"));
@@ -83,7 +83,7 @@ class UpdateBugTest {
 
         response.prettyPeek();
 
-        //Assertions.assertEquals(200, response.statusCode());
+        Assertions.assertEquals(200, response.statusCode());
 
         JsonPath json = response.jsonPath();
         Assertions.assertEquals(randomTitle, json.getString("title"));
