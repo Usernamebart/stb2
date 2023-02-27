@@ -1,0 +1,97 @@
+package pl.akademiaqa.bugs;
+
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import org.apache.http.HttpStatus;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import static io.restassured.RestAssured.given;
+
+class ReadBugsTest {
+
+    protected static final String BASE_URL = "http://localhost:3000/bugs";
+
+    @Test
+    void ReadAllBugsTest() {
+
+        Response response = given()
+                .when()
+                .get(BASE_URL);
+
+        response.prettyPeek();
+
+        Assertions.assertEquals(HttpStatus.SC_OK, response.getStatusCode());
+
+    }
+
+    @Test
+    void ReadOneBugTest() {
+
+        Response response = given()
+                .when()
+                .get(BASE_URL + "/2");
+
+        Assertions.assertEquals(HttpStatus.SC_OK, response.getStatusCode());
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertEquals("Very slow response after creating new employee", json.getString("title"));
+        Assertions.assertEquals("5", json.getString("employeeId"));
+    }
+
+    @Test
+    void ReadOneBugTestV2() {
+
+        Response response = given()
+                .when()
+                .get(BASE_URL + "/3")
+                .then()
+                .statusCode(200)
+                .body("description", Matchers.equalTo("When I search using bug description, search results are not included. Only bug title."))
+                .body("status", Matchers.equalTo("open"))
+                .extract()
+                .response();
+
+        response.prettyPeek();
+
+    }
+
+    @Test
+    void ReadOneBugWithPathVariableTest() {
+
+        Response response = given()
+                .pathParam("id", "1")
+                .when()
+                .get(BASE_URL + "/{id}")
+                .then()
+                .body("title", Matchers.equalTo("Incorrect response code after PATH to /bugs"))
+                .body("status", Matchers.equalTo("open"))
+                .extract()
+                .response();
+
+        response.prettyPeek();
+
+        Assertions.assertEquals(HttpStatus.SC_OK, response.getStatusCode());
+
+    }
+
+    @Test
+    void ReadOneBugWithQueryParamsTest() {
+
+        Response response = given()
+                .queryParam("title", "Incorrect response code after PATH to /bugs")
+                .when()
+                .get(BASE_URL);
+
+        response.prettyPeek();
+
+        Assertions.assertEquals(HttpStatus.SC_OK, response.statusCode());
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertEquals("When I send a PATH request to /bugs, instead of status code 200, I'm getting 404", json.getList("description").get(0));
+        Assertions.assertEquals(1, json.getList("employeeId").get(0));
+
+    }
+
+}
