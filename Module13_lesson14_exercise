@@ -1,0 +1,7 @@
+Trello Rest Assured tests:
+
+1. Create a board
+2. Read data from this board
+3. Delete this board
+4. Read data from deleted board
+5. Delete deleted board
