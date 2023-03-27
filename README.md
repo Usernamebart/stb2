@@ -1,8 +1,2 @@
 # stb2
-STB II notes
-
-
-Notes for exercises.
-Run collection results.
-Data preperation before sending requests.
-RestAssured tests.
+STB II notes, tests preperation and results, some code too.
